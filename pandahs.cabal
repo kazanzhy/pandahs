@@ -25,6 +25,10 @@ source-repository head
 
 library
   exposed-modules:
+      Core.Frame
+      Core.Index
+      Core.Series
+      IO.Parser.Csv
       Lib
   other-modules:
       Paths_pandahs
@@ -50,6 +54,7 @@ test-suite pandahs-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Core.Series
       Paths_pandahs
   hs-source-dirs:
       test
